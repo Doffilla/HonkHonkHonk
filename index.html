@@ -4,7 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <title>A Small Message</title>
+
+  <style>
+    @keyframes gentleBob {
+      0% {
+        transform: translateY(0);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+      }
+      50% {
+        transform: translateY(-6px);
+        box-shadow: 0 28px 55px rgba(0, 0, 0, 0.08);
+      }
+      100% {
+        transform: translateY(0);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+      }
+    }
+  </style>
 </head>
+
 <body style="
   margin: 0;
   height: 100vh;
@@ -17,16 +35,16 @@
 ">
 
   <div style="
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    max-width: 400px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 60px;
+    border-radius: 16px;
+    max-width: 520px;
     text-align: center;
+    animation: gentleBob 4.5s ease-in-out infinite;
   ">
     <h1 style="
-      margin: 0 0 15px 0;
-      font-size: 24px;
+      margin: 0 0 20px 0;
+      font-size: 28px;
       font-weight: 600;
     ">
       Hello there 👋
@@ -34,8 +52,8 @@
 
     <p style="
       margin: 0;
-      font-size: 16px;
-      line-height: 1.5;
+      font-size: 17px;
+      line-height: 1.6;
     ">
       This is just a quiet little corner of the internet.<br>
       Take a breath. You’re doing fine.
